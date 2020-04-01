@@ -20,3 +20,11 @@ body {
 .cities a:hover {
   color: #cae8d5;
 }
+
+.icon {
+  width: 30px;
+}
+
+.icon-large {
+  width: 300px;
+}

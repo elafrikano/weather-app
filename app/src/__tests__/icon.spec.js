@@ -18,16 +18,16 @@ describe("Icon renderiza correctamente", () => {
   it("Renderiza un icono normal", () => {
     const { container } = render(<Icon />);
 
-    let { style } = container.querySelector("img");
+    let { className } = container.querySelector("img");
 
-    expect(style.width).toBe("30px");
+    expect(className).toBe("icon");
   });
 
   it("Renderiza un icono Grande", () => {
     const { container } = render(<Icon large />);
 
-    let { style } = container.querySelector("img");
+    let { className } = container.querySelector("img");
 
-    expect(style.width).toBe("300px");
+    expect(className).toBe("icon-large");
   });
 });
