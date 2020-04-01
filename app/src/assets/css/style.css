@@ -1,0 +1,22 @@
+body {
+  background-color: #204051;
+  font-family: Roboto;
+  color: #cae8d5;
+}
+
+.container-app {
+  background-color: #3b6978;
+}
+
+.future-prediction {
+  background-color: #204051;
+  color: #cae8d5;
+}
+
+.cities a {
+  color: white;
+}
+
+.cities a:hover {
+  color: #cae8d5;
+}
