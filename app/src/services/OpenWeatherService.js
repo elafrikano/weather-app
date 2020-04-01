@@ -23,7 +23,7 @@ export function parseFiveDaysPrediction(list) {
       const prediction = {
         icon: current.weather[0].icon.replace(/n|d/, ""),
         day: daysToString[date.getDay()],
-        temp: current.main.temp
+        temp: current.main.temp.toFixed(0)
       };
       arrRet.push(prediction);
     }
@@ -35,7 +35,7 @@ export function parsePrediction(response) {
   const prediction = {
     icon: response.weather[0].icon.replace(/n|d/, ""),
     city: response.name,
-    temp: response.main.temp
+    temp: response.main.temp.toFixed(0)
   };
   return prediction;
 }
